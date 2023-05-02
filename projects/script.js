@@ -17,6 +17,7 @@ $(document).ready(function () {
     });
 });
 
+
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
@@ -30,7 +31,6 @@ document.addEventListener('visibilitychange',
     });
 
 
-// fetch projects start
 function getProjects() {
     return fetch("projects.json")
         .then(response => response.json())
@@ -45,9 +45,10 @@ function showProjects(projects) {
     let projectsHTML = "";
     projects.forEach(project => {
         projectsHTML += `
-        <div class="grid-item ${project.category}">
+
+         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="${image}.png" alt="project" />
+      <img draggable="false" src="${project.imge}" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -62,6 +63,7 @@ function showProjects(projects) {
       </div>
     </div>
     </div>`
+
     });
     projectsContainer.innerHTML = projectsHTML;
 
@@ -73,7 +75,7 @@ function showProjects(projects) {
         }
     });
 
-    // filter items on button click
+
     $('.button-group').on('click', 'button', function () {
         $('.button-group').find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
@@ -85,9 +87,7 @@ function showProjects(projects) {
 getProjects().then(data => {
     showProjects(data);
 })
-// fetch projects end
 
-// Start of Tawk.to Live Chat
 var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
@@ -97,9 +97,8 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
 })();
-// End of Tawk.to Live Chat
 
-// disable developer mode
+
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
