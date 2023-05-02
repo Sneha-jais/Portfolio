@@ -309,14 +309,14 @@ header .navbar ul li a:hover {
 .social-icons a.github:hover {
   background-color: #0e0e0e;
 }
-.social-icons a.twitter:hover {
+.social-icons a.leetcode:hover {
   background-color: #FFA500;
 }
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
 }
 .social-icons a.hack:hover {
-  background-color: 	#90EE90;
+  background-color: #2BB02B;
 }
 .social-icons a.mail:hover {
   background-color: #00aced;
