@@ -18,6 +18,16 @@
         "code": "https://github.com/Sneha-jais/Travel-world"
       }
     },
+     {
+      "name": "Digital Clock",
+      "desc": "A digital clock which tell about the coorect time. Built using HTML, CSS and Javascript.",
+      "image": "clock",
+  
+      "links": {
+        "view": "https://sneha-jais.github.io/Digital-Clock/",
+        "code": "https://github.com/Sneha-jais/Digital-Clock"
+      }
+    },
     {
       "name": "Resume",
       "desc": "My first E-Portfolio which I made during the course of coding ninjas.",
@@ -28,16 +38,7 @@
         "code": "https://github.com/Sneha-jais/Project1_Resume"
       }
     },
-    {
-      "name": "Digital Clock",
-      "desc": "A digital clock which tell about the coorect time. Built using HTML, CSS and Javascript.",
-      "image": "clock",
-  
-      "links": {
-        "view": "https://sneha-jais.github.io/Digital-Clock/",
-        "code": "https://github.com/Sneha-jais/Digital-Clock"
-      }
-    },
+   
     {
       "name": "E-Portfolio",
       "desc": "Personal portfolio website.You can just scroll down. You're here only!",
